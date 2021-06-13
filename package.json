@@ -1,0 +1,75 @@
+{
+  "userName": "app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "set REACT_APP_STAGE=local && react-app-rewired start",
+    "build": "react-scripts build",
+    "build:dev": "set REACT_APP_STAGE=dev && react-scripts build",
+    "build:stg": "set REACT_APP_STAGE=stg && react-scripts build",
+    "build:prod": "set REACT_APP_STAGE=prod && react-scripts build"
+  },
+  "dependencies": {
+    "@date-io/luxon": "1.x",
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.57",
+    "@material-ui/pickers": "^3.3.10",
+    "@reduxjs/toolkit": "^1.5.0",
+    "@types/luxon": "^1.26.0",
+    "@types/node": "^12.0.0",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@types/react-redux": "^7.1.16",
+    "@types/react-router": "^5.1.11",
+    "@types/react-router-dom": "^5.1.7",
+    "@types/react-virtualized": "^9.21.11",
+    "@types/redux-logger": "^3.0.8",
+    "@typescript-eslint/eslint-plugin": "^4.15.1",
+    "@typescript-eslint/parser": "^4.15.1",
+    "aws-amplify": "^3.3.19",
+    "axios": "^0.21.1",
+    "luxon": "^1.26.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-redux": "^7.2.2",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.2",
+    "redux": "^4.0.5",
+    "redux-logger": "^3.0.6",
+    "sass": "^1.32.8",
+    "typescript": "^4.1.2",
+    "web-vitals": "^1.0.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.15",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "react-app-rewired": "^2.1.8"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest",
+      "plugin:@typescript-eslint/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
