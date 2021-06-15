@@ -1,4 +1,4 @@
-import * as Actions from 'modules/actions';
+import * as Actions from 'modules/users/actions';
 import {initialState} from 're-ducks/store/initialState';
 
 export const UsersReducer = (state = initialState.users, action)  => {

@@ -7,6 +7,7 @@ import { shallowEqual, useDispatch, useSelector } from "react-redux";
 import { useHistory, useLocation } from "react-router";
 import { Route, Switch } from "react-router-dom";
 import { testDt } from "utils/datetimeUtil";
+import Home from "components/pages/Test";
 
 // export const getId = async () => await Auth.currentAuthenticatedUser();
 
@@ -37,8 +38,8 @@ const App: React.FC = () => {
                     } */}
           <Switch>
             {/* <Route path={pagePath.login} key={pagePath.login}><Login/></Route> */}
-            <Route path={pagePath.login} key={pagePath.login}>
-              <Login />
+            <Route path={"/"} key={"/"}>
+              <Home />
             </Route>
           </Switch>
           <footer>

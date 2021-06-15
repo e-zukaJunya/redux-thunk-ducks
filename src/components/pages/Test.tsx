@@ -1,5 +1,5 @@
 import React from "react";
-import { getUserId } from "modules/users";
+import { getUserId } from "modules/users/selectors";
 // import { getUserId } from "modules/users/selectors";
 import { useSelector } from "react-redux";
 
